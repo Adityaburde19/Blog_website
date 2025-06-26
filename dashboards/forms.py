@@ -1,11 +1,12 @@
 from django import forms
-from blogs.models import Category
+from blogs.models import Category, Blogs
 
 class CategoryForm(forms.ModelForm):
     class Meta:
         model = Category
         fields = '__all__'
-        # widgets = {
-        #     'name': forms.TextInput(attrs={'class': 'form-control'}),
-        #     'description': forms.Textarea(attrs={'class': 'form-control', 'rows': 3}),
-        # }
+        
+class BlogPostForm(forms.ModelForm):
+    class Meta:
+        model = Blogs # Assuming you have a model fr blog posts
+        fields = ('title', 'category', 'blog_image', 'short_description', 'blog_body', 'status','is_published')
