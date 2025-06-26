@@ -11,6 +11,9 @@
 4) U - manager
     P - manage12345
 
+5) U - rahul
+    P - rahul12345
+
 
 # To Run in virtual env
 
