@@ -1,0 +1,36 @@
+# For Login credentials
+1) U - admin
+    P - admin123456
+
+2) U - test
+    P - test@123
+
+3) U - editor1
+     P - testing@123
+
+4) U - manager
+    P - manage12345
+
+
+# To Run in virtual env
+
+1) python -m venv env
+- cd env
+- cd Scripts
+- activate
+ - now come back to project path "cd .."
+2) python manage.py runserver
+3) python manage.py makemigrations
+4) python manage.py migrate
+
+# To fetch all the packages installed
+
+This gives required files in the same project path
+--> pip freeze > requirement.txt 
+
+# If want to upgrade packages then -
+also <= or >= "current_version"
+--> pip install -r requirement.txt --upgrade 
+
+if done then again run to reflect changes -
+--> pip freeze > requirement.txt 
